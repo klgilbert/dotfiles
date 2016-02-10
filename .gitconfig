@@ -1,0 +1,21 @@
+[user]
+  name = Kasif Gilbert
+  email = kasif.gilbert@gmail.com
+[push]
+  default = matching
+[alias]
+  a = add -A
+  aa = add -A
+  dc = diff -F --cached
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[color]
+  ui = true
+[core]
+  editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
