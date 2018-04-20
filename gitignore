@@ -1,0 +1,15 @@
+.DS_Store
+.byebug_history
+
+# Vim files
+Session.vim
+.vimrc.local
+*.sw[po]
+
+# rbenv
+.rbenv-version
+.rbenv-vars
+
+# ctags file
+tags
+!tags/

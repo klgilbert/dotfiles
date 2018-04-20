@@ -1,10 +1,9 @@
-" Syntastic
-let g:syntastic_check_on_open=1
-let g:syntastic_disabled_filetypes=['html', 'scss']
-let g:syntastic_enable_signs=1
-let g:syntastic_javascript_checkers = ['jsl']
+" Disable Vi compatibility.
+set nocompatible
 
-let g:ctrlp_working_path_mode = 0
+" Set the leader early because it's used at the moment mappings are defined.
+" Changing mapleader after a mapping is defined has no effect on the mapping.
+let mapleader=','
 
 " Remmove the use of arrow keys
 noremap <Up> <Nop>
@@ -15,17 +14,6 @@ noremap <Right> <Nop>
 " Insert a hash rocket with <c-l>
 imap <c-l> =><space>
 
-set t_Co=256
-colorscheme solarized
-
-"let g:solarized_termcolors=256
-"set t_Co=16
-set background=dark
-"colorscheme solarized
-
-" Powerline config
-let g:Powerline_symbols = 'fancy'
-
 " Run cucumber
 map ,c :!cucumber --format progress<CR>
 
@@ -34,9 +22,6 @@ map ,rr :!rspec spec <CR>
 
 " Make :W the same as :w, which It isn't bound to anything
 command! W :w
-
-" QQ to enter visual mode
-"
 
 " Rename current file
 function! RenameFile()
@@ -50,24 +35,19 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
-" Ignore
-unlet g:ctrlp_custom_ignore
-let g:ctrlp_custom_ignore = '\v[\/](release|node_modules|development)$'
-
 " Remove trailing white space
 map ,tws :%s/\s\+$//e <CR>
-
-set tabstop=4
-
-" Automatically rebalance windows on vim resize
-autocmd VimResized * :wincmd =
 
 " Zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
-" folding settings
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
+" Packages
+call minpac#init()
+
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-unimpaired')
+call minpac#add('christoomey/vim-tmux-navigator')
+call minpac#add('machakann/vim-highlightedyank')
+
+call minpac#add('k-takata/minpac', {'type':'opt'})
