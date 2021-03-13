@@ -11,15 +11,6 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" Insert a hash rocket with <c-l>
-imap <c-l> =><space>
-
-" Run cucumber
-map ,c :!cucumber --format progress<CR>
-
-" Run entire test suite
-map ,rr :!rspec spec <CR>
-
 " Make :W the same as :w, which It isn't bound to anything
 command! W :w
 
@@ -37,17 +28,3 @@ map <leader>n :call RenameFile()<cr>
 
 " Remove trailing white space
 map ,tws :%s/\s\+$//e <CR>
-
-" Zoom a vim pane, <C-w>= to re-balance
-nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
-nnoremap <leader>= :wincmd =<cr>
-
-" Packages
-call minpac#init()
-
-call minpac#add('tpope/vim-surround')
-call minpac#add('tpope/vim-unimpaired')
-call minpac#add('christoomey/vim-tmux-navigator')
-call minpac#add('machakann/vim-highlightedyank')
-
-call minpac#add('k-takata/minpac', {'type':'opt'})
