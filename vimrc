@@ -24,7 +24,7 @@ function! RenameFile()
     redraw!
   endif
 endfunction
-map <leader>n :call RenameFile()<CR>
+map <leader>rn :call RenameFile()<CR>
 
 " Remove trailing white space
 map ,tws :%s/\s\+$//e <CR>
@@ -167,6 +167,9 @@ imap <C-8> <Esc>8gt
 map  <C-9> 9gt
 imap <C-9> <Esc>9gt
 
+" Open NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+
 " ===========================================================================
 " STATUSLINE
 " ===========================================================================
@@ -253,9 +256,8 @@ call plug#begin('~/.vim/bundle')
 Plug 'pangloss/vim-javascript'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'christoomey/vim-tmux-navigator'
-
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-
+Plug 'preservim/nerdtree'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -265,7 +267,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-commentary'
-
 Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
