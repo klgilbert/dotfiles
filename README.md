@@ -20,6 +20,9 @@ RCRC=rcrc rcup
 ```
 zplug install
 ```
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 ```bash
 vim +PlugInstall +qa
 ```

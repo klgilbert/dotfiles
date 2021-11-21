@@ -13,4 +13,3 @@ for zsh_source in $HOME/.zsh/configs/*.zsh; do
 done
 
 autoload -U promptinit; promptinit
-prompt pure
