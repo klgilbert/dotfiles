@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "homebrew/cask-fonts"
 
 brew "asdf"
 brew "awscli"
@@ -21,3 +22,4 @@ brew 'zplug'
 
 cask "alacritty"
 cask "kitty"
+cask "font-hack-nerd-font"
