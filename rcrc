@@ -1,0 +1,3 @@
+DOTFILES_DIRS=$HOME/.dotfiles
+EXCLUDES="README.md Brewfile Brewfile.lock.json"
+TAGS="git"

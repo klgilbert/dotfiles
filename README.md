@@ -1,8 +1,29 @@
 # dotfiles
 
+## Installation
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+```bash
+git clone -b develop https://github.com/klgilbert/dotfiles ~/.dotfiles
+```
+```bash
+cd ~/.dotfiles
+```
+```bash
+brew bundle
+```
+```bash
+RCRC=rcrc rcup
+```
+```bash
+vim +PlugInstall +qa
+```
+
 ## Vim
 
-### Basic customizations
+**Basic customizations**
 
 * Line numbers
 * Ruler (line and column numbers)
