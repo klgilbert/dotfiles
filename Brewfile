@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+
 brew "asdf"
 brew "awscli"
 brew "curl"
@@ -17,4 +18,6 @@ brew "tree"
 brew "wget"
 brew "youtube-dl"
 brew 'zplug'
+
 cask "alacritty"
+cask "kitty"
