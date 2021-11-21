@@ -17,6 +17,9 @@ brew bundle
 ```bash
 RCRC=rcrc rcup
 ```
+```
+zplug install
+```
 ```bash
 vim +PlugInstall +qa
 ```
