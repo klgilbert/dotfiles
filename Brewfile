@@ -4,6 +4,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
 
+brew "ag"
 brew "asdf"
 brew "awscli"
 brew "curl"
@@ -18,7 +19,7 @@ brew "tmux"
 brew "tree"
 brew "wget"
 brew "youtube-dl"
-brew 'zplug'
+brew "zplug"
 
 cask "alacritty"
 cask "kitty"
