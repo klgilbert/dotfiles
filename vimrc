@@ -5,6 +5,18 @@ set nocompatible
 " Changing mapleader after a mapping is defined has no effect on the mapping.
 let mapleader=','
 
+" Basic Setup
+set t_Co=256
+set number                        " Show line numbers
+set ruler                         " Show line and column number
+syntax enable                     " Turn on syntax highlighting allowing local overrides
+syntax on
+set nowrap                        " Don't wrap lines
+set tabstop=2                     " A tab is two spaces
+set shiftwidth=2                  " An autoindent (with <<) is two spaces
+set expandtab                     " Use spaces, not tabs
+set backspace=indent,eol,start    " Backspace through everything in insert mode
+
 " Make :W the same as :w, which It isn't bound to anything
 command! W :w
 
@@ -273,6 +285,12 @@ call plug#end()
 " ===========================================================================
 " PLUGIN OPTIONS
 " ===========================================================================
+
+" Dracula
+" -----------------
+let g:dracula_italic = 0
+let g:dracula_colorterm = 0
+colorscheme dracula
 
 " FZF
 " -----------------

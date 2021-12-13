@@ -13,3 +13,6 @@ for zsh_source in $HOME/.zsh/configs/*.zsh; do
 done
 
 autoload -U promptinit; promptinit
+
+# Use a separate tool to smartly ignore files
+export FZF_DEFAULT_COMMAND='rg --hidden --files --ignore-file ~/.ignore'

@@ -1,0 +1,52 @@
+# Instruct tools like ripgrep what to ignore when searching.
+
+## Directories
+
+/bin/stubs
+# For Middleman
+/build/
+/coverage/
+/doc/
+/log/
+/public/assets/
+/tmp/
+# Ignore local JS-related files
+/node_modules/
+/bower_components/
+.git/
+
+## Files
+
+# ctags file
+/tags
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.tiff
+*.bmp
+*.svg
+/spec/fixtures/*.sql
+.keep
+.gitkeep
+
+# Search these hidden directories even if I don't pass `--hidden`
+!.circleci/
+!.github/
+
+# JS
+yarn.lock
+package-lock.json
+# Jest snapshots
+__snapshots__
+
+# Huge JS files that mess up the vim quickfix window
+highlight.all.js
+highlight.pack.js
+vendor/assets/javascript/select2.js
+
+# Rust
+Cargo.lock
+
+!.vscode/
+!.env
