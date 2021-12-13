@@ -277,6 +277,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-obsession'
 Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
