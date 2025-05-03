@@ -1,5 +1,26 @@
 # dotfiles
 
+## Shortcuts and Keyboard Customizations
+
+- Trackpad: Disable Natural Scrolling
+
+- Keyboard Shortcuts: Map Caps Lock to Control
+- Keyboard Shortcuts: Mission Control > Misson Control => "Shift + Cmd + Up"
+- Keyboard Shortcuts: Mission Control > Application windows => "Shift + CMD + Down"
+- Spotlight: Uncheck "Show Spotlight search"
+- Dock Settings: Check "Automatically hide and show the Dock"
+
+## Applications
+
+- Caffeinate or Amphetamine
+- Brave
+- 1Password
+- Typora
+- DataGrip
+- Rectangle
+- Raycast
+- Postman
+
 ## Installation
 
 ### Homebrew
@@ -9,7 +30,7 @@
 
 ### Repository
 ```bash
-git clone -b develop https://github.com/klgilbert/dotfiles ~/.dotfiles
+git clone https://github.com/klgilbert/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ```
 
