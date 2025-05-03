@@ -13,3 +13,5 @@ Session.vim
 # ctags file
 tags
 !tags/
+
+ffg.config.jsonc
